@@ -1,0 +1,13 @@
+How-to-use virtual environments for MLND in my macOS
+
+conda deactivate # if you see that your in base <conda> environment
+
+python3 -m venv mlnd_env
+
+source mlnd_env/bin/activate
+
+# check that you r in mlnd_env package by looking for (mlnd_env)  # at the start of your terminal
+
+# run the cmd below to verify the packages installed in this      # mlnd_env
+
+mlnd_env/bin/pip freeze

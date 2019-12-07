@@ -1,0 +1,11 @@
+How to install a custom package
+
+create a distributions folder and setup.py
+
+cd to distributions folder and copy your package files ie Generaldistribution.py and Gaussiandistribution.py.
+Also create a __init__.py file with text 'from .Gaussiandistribution import Gaussian'.
+
+now cd back to the folder which contains the setup.py file and distributions folder and run the cmd
+pip install .
+
+verify with `pip freeze` that the package is installed
