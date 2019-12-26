@@ -11,3 +11,4 @@ source mlnd_env/bin/activate
 # run the cmd below to verify the packages installed in this      # mlnd_env
 
 mlnd_env/bin/pip freeze
+
