@@ -8,7 +8,7 @@ from sklearn.externals import joblib
 
 ## TODO: Import any additional libraries you need to define a model
 
-from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import AdaBoostClassifier
 
 
 # Provided model load function
@@ -58,15 +58,15 @@ if __name__ == '__main__':
     
 
     ## TODO: Define a model 
-    gnb = GaussianNB()
+    clf = AdaBoostClassifier(n_estimators=100, random_state=0)
     
     
     ## TODO: Train the model
     
-    gnb.fit(train_x, train_y)
+    clf.fit(train_x, train_y)
     
     ## --- End of your code  --- ##
     
 
     # Save the trained model
-    joblib.dump(gnb, os.path.join(args.model_dir, "model.joblib"))
+    joblib.dump(clf, os.path.join(args.model_dir, "model.joblib"))
